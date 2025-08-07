@@ -16,6 +16,10 @@ def median(nums):
     else:
         return nums_sorted[mid]
 
+def sum_numbers(nums):
+    """Return the sum of a list of numbers."""
+    return sum(nums)
+
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
@@ -171,10 +175,12 @@ def test_bst_validation():
 if __name__ == '__main__':
     print_hi('PyCharm says hello')
     numbers = [10, 20, 30, 40, 50]
-    # avg = average(numbers)
-    # print(f'The average of {numbers} is {avg}')
+    avg = average(numbers)
+    print(f'The average of {numbers} is {avg}')
     med = median(numbers)
     print(f'The median of {numbers} is {med}')
+    total = sum_numbers(numbers)
+    print(f'The sum of {numbers} is {total}')
     
     # Run BST validation tests
     test_bst_validation()
